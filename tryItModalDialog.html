@@ -1,0 +1,53 @@
+tryItModalDialog
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>This example uses the addEventListener() method to execute a function when a user clicks on a button.</p>
+
+<!-- <button id="myBtn">Try it</button> -->
+<img class="test" src="http://placehold.it/75x75">
+
+<script>
+/*
+var myNode = document.getElementsByClassName(".test");
+myNode.addEventListener("click", openViewer);
+
+function openViewer() {
+    alert ("Hello World!");
+}
+*/
+
+/*
+document.getElementById("test").addEventListener("click", function() {
+	alert ("Hello World!");
+
+
+});
+*/
+
+
+// this version works!
+
+(function() {
+  var imageToView = document.querySelector(".test");
+
+  imageToView.addEventListener("click", function(event) {
+//    console.log('ok');
+    if (event.target.tagName === 'img') {
+      alert('yot');
+    }
+	// alert('yo');
+  }, false);
+})();
+
+
+
+
+
+
+
+</script>
+</body>
+</html>

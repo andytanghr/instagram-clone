@@ -1,0 +1,132 @@
+/* * {
+    background: rgb(250, 250, 250);
+    box-sizing: border-box;
+
+} */
+body {
+    position: relative;
+}
+/* html, body, .modal-dialog {
+    height: 100%;
+    width: 100%;
+} */
+.modal-dialog {
+    display: none; /* display switched to fixed when image is clicked to view */
+    position: fixed;
+    background: rgba(0, 0, 0, 0);
+    z-index: 1; /* image viewer stays on top */
+    /* top: 0;
+    bottom: 0; */
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+
+
+
+}
+.viewer {
+    display: flex;
+    flex-direction: row;
+    /* justify-content: flex-start;
+    align-items: center; */
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+
+    cursor: pointer;
+}
+.close {
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+    float: right;
+    font-weight: bold;
+
+}
+.caption {
+    /* float: left; */
+    color: black;
+    /* border: 50px; */
+    padding: 0 70px;
+}
+.imageToView {
+    /* float: left; */
+    cursor: pointer;
+}
+
+
+nav {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    background: pink;
+    padding: 26px 40px;
+    justify-content: flex-start;
+    height: 77px;
+}
+.logo {
+    float: left;
+    width: 250px;
+    height: 35px;
+    margin-right: 12px;
+}
+.search {
+    width: 200px;
+    position: relative;
+}
+.headerAndGallery {
+    padding: 60px 20px 0;
+    background: tan; /* rgb(255, 255, 255); */
+    width: 100%;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    /* top: 100px; */
+    /* position: fixed; */
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    height: 200px;
+    /* margin-bottom: 50px; */
+}
+.profilePic {
+    display: block;
+    align-self: center;
+    border-radius: 50%;
+    max-width: 152px; /* can't seem to resize based on percentages */
+    /* height: auto; */
+    margin-right: 30px;
+    margin-left: 30px;
+
+}
+.stats {
+    list-style: none;
+    margin-bottom: 20px;
+}
+.profileDesc {
+    float: left;
+    /* width: 614px; */
+    /* height: 152px; */
+    /* display: inline; */
+}
+.name {
+    font-weight: lighter;
+}
+.bold {
+    font-weight: bold;
+}
+.inline {
+    display: inline;
+    margin-right: 40px;
+}
+/* img:hover{
+    color: rgba(0, 0, 0, .5);
+} */
